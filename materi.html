@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Materi Komputasi Awan | Atha Asriandi</title>
+  <meta name="description" content="Pengertian komputasi awan, SaaS, PaaS, IaaS, serta manfaat dan risikonya.">
+  <meta name="theme-color" content="#08171E">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="preloader"><div class="pl"><div class="pl-word" aria-label="ATHA"><span>A</span><span>T</span><span>H</span><span>A</span></div><div class="pl-bar"><i></i></div></div></div>
+  <div class="progress-bar-top"></div>
+  <div class="bg-aurora"><i></i><i></i><i></i></div>
+  <div class="bg-grid"></div>
+  <canvas id="gl" aria-hidden="true"></canvas>
+  <div class="cursor-glow"></div>
+
+  <nav class="navbar navbar-expand-lg fixed-top nav-glass" id="nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span>Atha<i>.</i></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu"><span class="tg"><b></b><b></b><b></b></span></button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="materi.html">Materi</a></li>
+          <li class="nav-item"><a class="nav-link" href="portofolio.html">Portofolio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-hero" data-fadeout>
+      <div class="container">
+        <p class="crumb" data-reveal="up">Materi</p>
+        <h1><span data-split>Komputasi</span> <span class="grad" data-split>Awan</span></h1>
+        <p class="sec-sub mx-auto" data-reveal="up" style="--d:.25s">Belajar bagaimana data dan aplikasi bisa berjalan di internet tanpa harus punya server sendiri.</p>
+      </div>
+    </header>
+
+    <!-- Pengertian -->
+    <section class="section pt-4" id="pengertian">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-6" data-reveal="left">
+            <h2 class="sec-title">Apa itu komputasi awan?</h2>
+            <div class="glass def-card">
+              <p>Komputasi awan (<i>cloud computing</i>) adalah penyediaan layanan komputasi melalui internet, seperti server, penyimpanan, basis data, jaringan, dan perangkat lunak. Pengguna cukup menyewa dan membayar sesuai pemakaian, tanpa membeli serta merawat perangkat keras sendiri.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-3 h-100">
+              <div class="col-6" data-reveal="zoom"><div class="glass cc-feature"><i class="bi bi-hand-index-thumb"></i><h5>On-demand</h5><p>Sumber daya diminta kapan saja, langsung aktif.</p></div></div>
+              <div class="col-6" data-reveal="zoom" style="--d:.1s"><div class="glass cc-feature"><i class="bi bi-globe2"></i><h5>Akses luas</h5><p>Bisa dibuka dari perangkat dan lokasi mana pun.</p></div></div>
+              <div class="col-6" data-reveal="zoom" style="--d:.2s"><div class="glass cc-feature"><i class="bi bi-arrows-angle-expand"></i><h5>Elastis</h5><p>Kapasitas naik atau turun sesuai kebutuhan.</p></div></div>
+              <div class="col-6" data-reveal="zoom" style="--d:.3s"><div class="glass cc-feature"><i class="bi bi-speedometer2"></i><h5>Terukur</h5><p>Biaya dihitung dari penggunaan yang nyata.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Model layanan -->
+    <section class="section" id="layanan">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="sec-title" data-split>Tiga model layanan cloud</h2>
+          <p class="sec-sub mx-auto" data-reveal="up">Klik tiap tab untuk melihat penjelasan, contoh, dan siapa yang mengelola apa.</p>
+        </div>
+        <ul class="nav svc-tabs" role="tablist" data-reveal="up">
+          <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#saas" type="button" role="tab"><i class="bi bi-window-stack me-2"></i>SaaS</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#paas" type="button" role="tab"><i class="bi bi-tools me-2"></i>PaaS</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#iaas" type="button" role="tab"><i class="bi bi-hdd-rack me-2"></i>IaaS</button></li>
+        </ul>
+        <div class="tab-content" data-reveal="up">
+          <div class="tab-pane fade show active" id="saas" role="tabpanel">
+            <div class="glass svc-body">
+              <h3>SaaS <small class="text-secondary fs-6">Software as a Service</small></h3>
+              <p>Aplikasi jadi yang langsung dipakai lewat browser atau aplikasi. Penyedia mengurus server, pembaruan, dan keamanan, pengguna tinggal memakainya.</p>
+              <p class="mb-1"><b class="text-white">Cocok untuk:</b> pengguna akhir yang butuh aplikasi siap pakai.</p>
+              <span class="tag">Gmail</span><span class="tag">Google Docs</span><span class="tag">Microsoft 365</span><span class="tag">Zoom</span><span class="tag">Canva</span>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="paas" role="tabpanel">
+            <div class="glass svc-body">
+              <h3>PaaS <small class="text-secondary fs-6">Platform as a Service</small></h3>
+              <p>Platform lengkap untuk membangun, menguji, dan menjalankan aplikasi. Pengembang fokus menulis kode, sedangkan sistem operasi, runtime, dan infrastruktur diurus penyedia.</p>
+              <p class="mb-1"><b class="text-white">Cocok untuk:</b> developer yang ingin cepat merilis aplikasi tanpa mengatur server.</p>
+              <span class="tag">Google App Engine</span><span class="tag">Heroku</span><span class="tag">Vercel</span><span class="tag">Azure App Service</span>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="iaas" role="tabpanel">
+            <div class="glass svc-body">
+              <h3>IaaS <small class="text-secondary fs-6">Infrastructure as a Service</small></h3>
+              <p>Infrastruktur dasar berupa mesin virtual, penyimpanan, dan jaringan yang disewa dari penyedia. Pengguna bebas memasang sistem operasi dan mengatur semuanya sendiri.</p>
+              <p class="mb-1"><b class="text-white">Cocok untuk:</b> administrator sistem yang butuh kendali penuh atas lingkungan server.</p>
+              <span class="tag">Amazon EC2</span><span class="tag">Google Compute Engine</span><span class="tag">Azure Virtual Machines</span><span class="tag">DigitalOcean</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass p-4 mt-4" data-reveal="up">
+          <h5 class="mb-3"><i class="bi bi-layers-fill text-info me-2"></i>Siapa mengelola apa?</h5>
+          <div class="legend mb-3"><span><i style="background:rgba(9,107,144,.8);border:1px solid var(--sky)"></i>Dikelola Anda</span><span><i style="background:rgba(161,205,220,.12);border:1px dashed var(--line)"></i>Dikelola penyedia</span></div>
+          <div class="table-responsive"><div class="stack" id="stackGrid"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alur kerja -->
+    <section class="section" id="alur">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="sec-title" data-split>Bagaimana cloud bekerja?</h2>
+          <p class="sec-sub mx-auto" data-reveal="up">Alur berjalan otomatis. Klik salah satu ikon untuk berhenti di tahap itu.</p>
+        </div>
+        <div class="glass flow p-4 p-md-5" data-reveal="zoom">
+          <div class="flow-nodes">
+            <div class="fn" role="button" tabindex="0"><i class="bi bi-laptop"></i><span>Pengguna</span></div>
+            <div class="fl"><i class="pk"></i></div>
+            <div class="fn" role="button" tabindex="0"><i class="bi bi-wifi"></i><span>Internet</span></div>
+            <div class="fl"><i class="pk"></i></div>
+            <div class="fn" role="button" tabindex="0"><i class="bi bi-cloud-fill"></i><span>Data center</span></div>
+            <div class="fl"><i class="pk"></i></div>
+            <div class="fn" role="button" tabindex="0"><i class="bi bi-check2-circle"></i><span>Hasil</span></div>
+          </div>
+          <div class="flow-text" id="flowBox"><h4 id="flowTitle"></h4><p id="flowDesc" class="mb-0"></p></div>
+          <div class="text-center mt-3"><button class="btn btn-ghost" id="flowPlay" type="button"></button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tampilan 3D -->
+    <section class="section" id="tumpukan">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5" data-reveal="left">
+            <h2 class="sec-title">Susunan layanan dalam 3D</h2>
+            <p class="text-secondary">Scroll untuk merenggangkan lapisan, lalu gerakkan mouse untuk memutarnya.</p>
+            <p class="mb-0"><span class="tag">IaaS</span><span class="tag">PaaS</span><span class="tag">SaaS</span></p>
+          </div>
+          <div class="col-lg-7" data-reveal="right">
+            <div class="iso"><div class="iso-stage">
+              <div class="iso-layer l3"><b>SaaS</b><small>Aplikasi siap pakai</small></div>
+              <div class="iso-layer l2"><b>PaaS</b><small>Platform untuk developer</small></div>
+              <div class="iso-layer l1"><b>IaaS</b><small>Server dan jaringan</small></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Manfaat & risiko -->
+    <section class="section" id="manfaat-risiko">
+      <div class="container">
+        <h2 class="sec-title text-center mb-5" data-split>Manfaat dan risiko</h2>
+        <div class="row g-4">
+          <div class="col-lg-6" data-reveal="left">
+            <div class="glass pro">
+              <h3 class="mb-4"></i>Manfaat</h3>
+              <ul>
+                <li><b>Hemat biaya awal.</b> Tidak perlu membeli server dan perangkat mahal, cukup bayar sesuai pemakaian.</li>
+                <li><b>Mudah diskalakan.</b> Kapasitas bisa ditambah saat ramai dan dikurangi saat sepi.</li>
+                <li><b>Akses di mana saja.</b> Data dan aplikasi bisa dibuka dari berbagai perangkat selama ada internet.</li>
+                <li><b>Pembaruan otomatis.</b> Penyedia mengurus pemeliharaan dan pembaruan sistem.</li>
+                <li><b>Cadangan dan pemulihan.</b> Data bisa direplikasi sehingga lebih aman dari kerusakan perangkat.</li>
+                <li><b>Kolaborasi mudah.</b> Banyak orang bisa bekerja pada berkas yang sama secara bersamaan.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6" data-reveal="right">
+            <div class="glass con">
+              <h3 class="mb-4"></i>Risiko</h3>
+              <ul>
+                <li><b>Keamanan dan privasi.</b> Data disimpan di pihak ketiga sehingga rawan kebocoran bila konfigurasi lemah.</li>
+                <li><b>Ketergantungan internet.</b> Tanpa koneksi yang stabil, layanan sulit diakses.</li>
+                <li><b>Vendor lock-in.</b> Berpindah ke penyedia lain bisa sulit dan mahal.</li>
+                <li><b>Gangguan layanan.</b> Jika penyedia mengalami downtime, pengguna ikut terdampak.</li>
+                <li><b>Biaya membengkak.</b> Pemakaian yang tidak dipantau bisa membuat tagihan melonjak.</li>
+                <li><b>Kepatuhan hukum.</b> Lokasi penyimpanan data bisa terkait regulasi tertentu.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="glass cta mt-5" data-reveal="zoom">
+          <h2 class="mb-3">Sudah paham materinya?</h2>
+          <p class="text-secondary mb-4">Lihat hasil tugas yang sudah saya kerjakan.</p>
+          <a class="btn btn-cloud" href="portofolio.html">Buka Portofolio Tugas</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span>&copy; 2026 Atha Asriandi &middot; Ilmu Komputer - 23.53.027631</span>
+    </div>
+  </footer>
+  <button class="to-top" aria-label="Kembali ke atas"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atha Asriandi | Portofolio</title>
+  <meta name="description" content="Portofolio Atha Asriandi, mahasiswa Ilmu Komputer Universitas Muhammadiyah Palangkaraya.">
+  <meta name="theme-color" content="#08171E">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="preloader"><div class="pl"><div class="pl-word" aria-label="ATHA"><span>A</span><span>T</span><span>H</span><span>A</span></div><div class="pl-bar"><i></i></div></div></div>
+  <div class="progress-bar-top"></div>
+  <div class="bg-aurora"><i></i><i></i><i></i></div>
+  <div class="bg-grid"></div>
+  <canvas id="gl" aria-hidden="true"></canvas>
+  <div class="cursor-glow"></div>
+
+  <nav class="navbar navbar-expand-lg fixed-top nav-glass" id="nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span>Atha<i>.</i></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu"><span class="tg"><b></b><b></b><b></b></span></button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="materi.html">Materi</a></li>
+          <li class="nav-item"><a class="nav-link" href="portofolio.html">Portofolio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="cloud-layer" aria-hidden="true"><i class="bi bi-cloud-fill sky-cloud" style="top:14%;font-size:9rem;animation-duration:70s"></i><i class="bi bi-cloud-fill sky-cloud" style="top:58%;font-size:6rem;animation-duration:48s;animation-delay:-20s"></i><i class="bi bi-cloud-fill sky-cloud" style="top:80%;font-size:11rem;animation-duration:90s;animation-delay:-45s"></i></div>
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7" data-fadeout>
+            <h1><span data-split>Welcome to My</span> <span class="grad" data-split>Portfolio</span></h1>
+            <div class="role" data-reveal="up" style="--d:.3s"><span data-typewriter data-words='["Web Development","Machine Learning","Junior Developer"]'>Web Development</span><span class="caret"></span></div>
+            <p class="lead-p" data-reveal="up" style="--d:.4s">
+              Semuanya berawal dari hobi bereksperimen di komputer mengutak-atik file dan mencoba segala command sampai penasaran bagaimana semua itu bisa bekerja.
+              Rasa penasaran itu membawa saya masuk SMK Jurusan Rekayasa Perangkat Lunak, dimulai belajar level awal dasar pemrograman hingga ke mid level, lalu melanjutkan ke bangku kuliah Ilmu Komputer untuk memperdalam web dan kecerdasan buatan.
+            </p>
+            <div class="find-me" data-reveal="up" style="--d:.5s">
+              <span>Find me</span>
+              <div class="social d-flex gap-2">
+                <a href="https://www.instagram.com/_athsr/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/@kayzeennnnnn" target="_blank" rel="noopener" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.youtube.com/@athaasriandi8511" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                <a href="https://github.com/Athaasriandi" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5" data-fadeout>
+            <div class="photo-wrap" data-reveal="zoom" data-tilt style="--d:.5s">
+              <div class="photo-back"></div>
+              <div class="photo-ring"></div>
+              <div class="photo-frame"><img src="assets/images/foto-profile.jpeg" alt="Foto Atha Asriandi"></div>
+              <div class="chip c1"><i class="bi bi-code-slash"></i></div>
+              <div class="chip c2"><i class="bi bi-cpu"></i></div>
+              <div class="chip c3"><i class="bi bi-cloud-fill"></i></div>
+              <div class="badge-spin" aria-hidden="true">
+                <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs><circle cx="60" cy="60" r="58" fill="rgba(4,43,68,.9)" stroke="rgba(161,205,220,.3)"/><text><textPath href="#circ" textLength="270" lengthAdjust="spacing">Junior Developer • Web Dev • ML •</textPath></text></svg>
+                <i class="bi bi-stars"></i>
+              </div>
+                <div class="term" aria-hidden="true">
+                <div class="dots"><b></b><b></b><b></b></div>
+                <span style="--w:15ch;--n:15">php spark serve</span>
+                <span style="--w:25ch;--n:14;animation-delay:.9s">python run app_atha.py</span>
+                <span style="--w:20ch;--n:15;animation-delay:1.8s">$ npm run app_atha</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"></div>
+    </section>
+
+    <!-- SKILL MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span><i class="bi bi-filetype-html"></i> HTML</span><span><i class="bi bi-filetype-css"></i> CSS</span><span><i class="bi bi-filetype-js"></i> JavaScript</span><span><i class="bi bi-filetype-py"></i> Python</span><span><i class="bi bi-cpu"></i> Machine Learning</span><span><i class="bi bi-cloud-fill"></i> Cloud Computing</span><span><i class="bi bi-github"></i> Git &amp; GitHub</span>
+        <span><i class="bi bi-filetype-html"></i> HTML</span><span><i class="bi bi-filetype-css"></i> CSS</span><span><i class="bi bi-filetype-js"></i> JavaScript</span><span><i class="bi bi-filetype-py"></i> Python</span><span><i class="bi bi-cpu"></i> Machine Learning</span><span><i class="bi bi-cloud-fill"></i> Cloud Computing</span><span><i class="bi bi-github"></i> Git &amp; GitHub</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <i class="bi bi-braces deco" data-speed="1.4" style="top:8%;right:5%"></i>
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <div class="about-img" data-reveal="left" data-speed=".3">
+              <img src="assets/images/foto-berdiri.png" alt="Atha Asriandi berdiri">
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <h2 class="sec-title" data-split>Halo, saya Atha Asriandi</h2>
+            <p data-scrub>
+              Saya adalah junior developer yang berfokus pada pengembangan web dan pembelajaran mesin. Saya senang mengubah ide menjadi sesuatu yang bisa dilihat dan dipakai,
+              mulai dari tampilan yang rapi sampai logika di belakangnya. Saat ini saya terus belajar, mencoba hal baru, dan membangun proyek kecil agar kemampuan saya semakin tajam.
+            </p>
+            <ul class="info-list">
+              <li class="glass" data-reveal="right" style="--d:.1s"><span class="ic"><i class="bi bi-person-fill"></i></span><div><small>Nama lengkap</small><b>Atha Asriandi</b></div></li>
+              <li class="glass" data-reveal="right" style="--d:.2s"><span class="ic"><i class="bi bi-card-text"></i></span><div><small>NIM</small><b>23.53.027631</b></div></li>
+              <li class="glass" data-reveal="right" style="--d:.3s"><span class="ic"><i class="bi bi-bank2"></i></span><div><small>Universitas</small><b>Universitas Muhammadiyah Palangkaraya</b></div></li>
+              <li class="glass" data-reveal="right" style="--d:.4s"><span class="ic"><i class="bi bi-mortarboard-fill"></i></span><div><small>Program Studi</small><b>Ilmu Komputer</b></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- STAT -->
+  <section class="section pt-0">
+      <div class="container">
+        <div class="row g-3 g-md-4 text-center">
+          <div class="col-6 col-md-3" data-reveal="up"><div class="glass stat"><b data-count="3" data-suffix="+">0</b><span>Bidang diminati</span></div></div>
+          <div class="col-6 col-md-3" data-reveal="up" style="--d:.1s"><div class="glass stat"><b data-count="2">0</b><span>Tugas selesai</span></div></div>
+          <div class="col-6 col-md-3" data-reveal="up" style="--d:.2s"><div class="glass stat"><b data-count="3">0</b><span>Layanan cloud dipelajari</span></div></div>
+          <div class="col-6 col-md-3" data-reveal="up" style="--d:.3s"><div class="glass stat"><b data-count="100" data-suffix="%">0</b><span>Semangat belajar</span></div></div>
+        </div>
+      </div>
+    </section>
+
+ <section class="section pt-0" id="skills">
+      <i class="bi bi-cpu deco" data-speed="1.1" style="bottom:6%;left:4%"></i>
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="sec-title" data-split>Skills &amp; Teknologi</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4" data-reveal="up"><div class="glass skill-card" data-tilt><div class="top"><i class="bi bi-window-sidebar"></i><h4 class="mb-0 fs-5">Web</h4></div>
+            <div class="sk"><div class="l"><span>HTML</span><span>100%</span></div><div class="bar"><i style="--lv:100%"></i></div></div>
+            <div class="sk"><div class="l"><span>CSS</span><span>100%</span></div><div class="bar"><i style="--lv:100%"></i></div></div>
+            <div class="sk"><div class="l"><span>JavaScript</span><span>80%</span></div><div class="bar"><i style="--lv:80%"></i></div></div></div></div>
+          <div class="col-md-4" data-reveal="up" style="--d:.15s"><div class="glass skill-card" data-tilt><div class="top"><i class="bi bi-robot"></i><h4 class="mb-0 fs-5">AI &amp; Data</h4></div>
+            <div class="sk"><div class="l"><span>Python</span><span>75%</span></div><div class="bar"><i style="--lv:75%"></i></div></div>
+            <div class="sk"><div class="l"><span>Machine Learning</span><span>70%</span></div><div class="bar"><i style="--lv:70%"></i></div></div>
+            <div class="sk"><div class="l"><span>Analisis Data</span><span>70%</span></div><div class="bar"><i style="--lv:70%"></i></div></div></div></div>
+          <div class="col-md-4" data-reveal="up" style="--d:.3s"><div class="glass skill-card" data-tilt><div class="top"><i class="bi bi-cloud-fill"></i><h4 class="mb-0 fs-5">Cloud &amp; Tools</h4></div>
+            <div class="sk"><div class="l"><span>Git &amp; GitHub</span><span>85%</span></div><div class="bar"><i style="--lv:85%"></i></div></div>
+            <div class="sk"><div class="l"><span>Cloud Computing</span><span>80%</span></div><div class="bar"><i style="--lv:80%"></i></div></div>
+            <div class="sk"><div class="l"><span>Deployment</span><span>80%</span></div><div class="bar"><i style="--lv:80%"></i></div></div></div></div>
+        </div>
+      </div>
+    </section>
+
+   <section class="section" id="moments">
+      <div class="container text-center mb-4">
+        <h2 class="sec-title" data-split>Moment-moment saya</h2>
+        <p class="sec-sub mx-auto" data-reveal="up"><span class="d-none d-lg-inline">Scroll ke bawah untuk menggeser galeri.</span><span class="d-lg-none">Geser ke samping untuk melihat semuanya.</span></p>
+      </div>
+      <div class="moments-pin">
+        <div class="moments-track">
+          <figure class="moment" style="--r:-3deg"><div class="ph"><img src="assets/images/moments/moment-01.jpg" alt="Moment 1"></div><figcaption><b>01</b><span>Seminar Proposal</span></figcaption></figure>
+          <figure class="moment" style="--r:2deg"><div class="ph"><img src="assets/images/moments/moment-02.jpg" alt="Moment 2"></div><figcaption><b>02</b><span>Terima Kasih Giftnya Hehe</span></figcaption></figure>
+          <figure class="moment" style="--r:-2deg"><div class="ph"><img src="assets/images/moments/moment-03.jpg" alt="Moment 3"></div><figcaption><b>03</b><span>Menyantai di taman kecil kecilan kampus</span></figcaption></figure>
+          <figure class="moment" style="--r:3deg"><div class="ph"><img src="assets/images/moments/moment-04.jpg" alt="Moment 4"></div><figcaption><b>04</b><span>Awalnya tugas tapi kok lucu ya kalau orang ini digabung wkwk</span></figcaption></figure>
+          <figure class="moment" style="--r:-4deg"><div class="ph"><img src="assets/images/moments/moment-05.jpg" alt="Moment 5"></div><figcaption><b>05</b><span>Selfie with my beautiful sist</span></figcaption></figure>
+          <figure class="moment" style="--r:2deg"><div class="ph"><img src="assets/images/moments/moment-06.jpg" alt="Moment 6"></div><figcaption><b>06</b><span>Singkong dan Teman Teman</span></figcaption></figure>
+          <figure class="moment" style="--r:-2deg"><div class="ph"><img src="assets/images/moments/moment-07.jpg" alt="Moment 7"></div><figcaption><b>07</b><span>Arman maulana orang jepang!??</span></figcaption></figure>
+          <figure class="moment" style="--r:4deg"><div class="ph"><img src="assets/images/moments/moment-08.jpg" alt="Moment 8"></div><figcaption><b>08</b><span>Ah 3 orang ini lagi hahaha</span></figcaption></figure>
+          <figure class="moment" style="--r:-3deg"><div class="ph"><img src="assets/images/moments/moment-09.jpg" alt="Moment 9"></div><figcaption><b>09</b><span>Bukber W Ilmu Komputer B</span></figcaption></figure>
+          <figure class="moment" style="--r:2deg"><div class="ph"><img src="assets/images/moments/moment-10.jpg" alt="Moment 10"></div><figcaption><b>10</b><span>Semoga selalu diberkahi keluarga ini Aaminn</span></figcaption></figure>
+        </div>
+      </div>
+      <div class="moments-progress d-none d-lg-block"><i></i></div>
+    </section>
+
+
+    <!-- JELAJAH -->
+    <section class="section pt-0">
+      <div class="container">
+        <h2 class="sec-title text-center" data-split>Jelajahi website ini</h2>
+        <div class="row g-4 mt-3">
+          <div class="col-md-6" data-reveal="left">
+            <a class="glass go-card" href="materi.html" data-tilt><i class="bi bi-arrow-up-right arrow"></i><i class="bi bi-cloud-fill big"></i><h3>Materi Komputasi Awan</h3><p class="mb-0 text-secondary">Pengertian, SaaS, PaaS, IaaS, serta manfaat dan risikonya.</p></a>
+          </div>
+          <div class="col-md-6" data-reveal="right">
+            <a class="glass go-card" href="portofolio.html" data-tilt><i class="bi bi-arrow-up-right arrow"></i><i class="bi bi-folder2-open big"></i><h3>Portofolio Tugas</h3><p class="mb-0 text-secondary">Ringkasan dan tautan hasil Tugas 1 dan Tugas 2.</p></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span>&copy; 2026 Atha Asriandi &middot; Ilmu Komputer - 23.53.027631</span>
+    </div>
+  </footer>
+  <button class="to-top" aria-label="Kembali ke atas"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
